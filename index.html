@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Derona Academy | Staan Sterk - Stand Strong</title>
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-    
+
     <!-- Frameworks -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -54,6 +54,13 @@
         .hero-gradient {
             background: radial-gradient(circle at 100% 0%, rgba(0, 188, 212, 0.15) 0%, transparent 40%),
                         radial-gradient(circle at 0% 100%, rgba(10, 29, 55, 0.05) 0%, transparent 40%);
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
         }
     </style>
 </head>
@@ -106,18 +113,176 @@
                 </div>
             </div>
             <div class="relative reveal delay-200">
-                <img src="https://images.unsplash.com/photo-1523050338692-7b84ba2111ef?auto=format&fit=crop&q=80&w=1000" class="rounded-[3rem] shadow-3xl w-full aspect-square object-cover" alt="Students">
+                <img src="https://images.unsplash.com/photo-1523050338692-7b84ba2111ef?auto=format&fit=crop&q=80&w=1000" class="rounded-[3rem] shadow-2xl w-full aspect-square object-cover" alt="Students at Derona Academy">
             </div>
         </div>
     </section>
 
-    <!-- Content Section -->
+    <!-- About / Accreditation Section -->
     <section class="py-32 bg-white" id="about">
         <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-2xl mb-16 reveal">
+                <h2 class="font-serif text-4xl md:text-5xl mb-6">Why families choose Derona</h2>
+                <p class="text-slate-500 text-lg leading-relaxed">
+                    A small, independent school built on Christian values, academic rigour, and a curriculum families can trust.
+                </p>
+            </div>
             <div class="grid lg:grid-cols-3 gap-12">
                 <div class="p-10 bg-brand-soft rounded-[2.5rem] reveal">
                     <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-brand-teal mb-6 shadow-sm">
                         <i data-lucide="shield-check" class="w-6 h-6"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-4">Umalusi Registered</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">Fully accredited educational standards ensuring
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Fully accredited educational standards ensuring every qualification we award is recognised nationally.
+                    </p>
+                </div>
+                <div class="p-10 bg-brand-soft rounded-[2.5rem] reveal">
+                    <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-brand-teal mb-6 shadow-sm">
+                        <i data-lucide="book-open" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">CAPS Curriculum</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        We follow the national CAPS syllabus from Grade R through to Matric, taught by qualified educators.
+                    </p>
+                </div>
+                <div class="p-10 bg-brand-soft rounded-[2.5rem] reveal">
+                    <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-brand-teal mb-6 shadow-sm">
+                        <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Christian Values</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        A non-profit school where faith, character, and community are part of every learner's daily experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-32 bg-brand-soft" id="services">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-2xl mb-16 reveal">
+                <h2 class="font-serif text-4xl md:text-5xl mb-6">What we offer</h2>
+                <p class="text-slate-500 text-lg leading-relaxed">
+                    From a learner's first day in Grade R to their final Matric exam, Derona Academy walks alongside every family.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-10 bg-white rounded-[2.5rem] shadow-sm reveal flex gap-6 items-start">
+                    <div class="w-12 h-12 shrink-0 bg-brand-teal/10 rounded-xl flex items-center justify-center text-brand-teal">
+                        <i data-lucide="school" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-2">Grade R - Grade 7</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">Foundation and intermediate phase teaching that builds strong literacy, numeracy, and life-skills habits early.</p>
+                    </div>
+                </div>
+                <div class="p-10 bg-white rounded-[2.5rem] shadow-sm reveal flex gap-6 items-start">
+                    <div class="w-12 h-12 shrink-0 bg-brand-teal/10 rounded-xl flex items-center justify-center text-brand-teal">
+                        <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-2">Grade 8 - Matric</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">Senior phase and FET teaching focused on exam readiness and preparing learners for life after school.</p>
+                    </div>
+                </div>
+                <div class="p-10 bg-white rounded-[2.5rem] shadow-sm reveal flex gap-6 items-start">
+                    <div class="w-12 h-12 shrink-0 bg-brand-teal/10 rounded-xl flex items-center justify-center text-brand-teal">
+                        <i data-lucide="users" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-2">Small Class Sizes</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">Low learner-to-teacher ratios so every child gets individual attention and support where they need it most.</p>
+                    </div>
+                </div>
+                <div class="p-10 bg-white rounded-[2.5rem] shadow-sm reveal flex gap-6 items-start">
+                    <div class="w-12 h-12 shrink-0 bg-brand-teal/10 rounded-xl flex items-center justify-center text-brand-teal">
+                        <i data-lucide="church" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-2">Christian Character Development</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">Weekly devotions and values-based teaching that shape character alongside academic growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-32 bg-brand-navy text-white" id="contact">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="reveal">
+                <h2 class="font-serif text-4xl md:text-5xl mb-6">Enrol your child today</h2>
+                <p class="text-slate-300 text-lg leading-relaxed mb-10 max-w-lg">
+                    Get in touch with our admissions team in Kempton Park to book a tour or ask about spaces for the coming year.
+                </p>
+                <div class="space-y-5">
+                    <a href="tel:+27823789842" class="flex items-center gap-4 group">
+                        <div class="w-11 h-11 bg-white/10 rounded-xl flex items-center justify-center group-hover:bg-brand-teal transition-colors">
+                            <i data-lucide="phone" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-medium">082 378 9842</span>
+                    </a>
+                    <div class="flex items-center gap-4">
+                        <div class="w-11 h-11 bg-white/10 rounded-xl flex items-center justify-center">
+                            <i data-lucide="map-pin" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-medium">Kempton Park, Gauteng</span>
+                    </div>
+                </div>
+            </div>
+            <form class="reveal bg-white text-brand-navy p-10 rounded-[2.5rem] space-y-5">
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Parent name</label>
+                    <input type="text" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-teal focus:outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Contact number</label>
+                    <input type="tel" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-teal focus:outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Message</label>
+                    <textarea rows="4" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-teal focus:outline-none"></textarea>
+                </div>
+                <button type="submit" class="w-full py-4 bg-brand-navy text-white rounded-xl font-bold hover:bg-brand-teal transition-all">
+                    Send message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-brand-navy text-slate-400 text-center text-xs border-t border-white/10">
+        <p>&copy; 2026 Derona Academy. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Render Lucide icons
+        lucide.createIcons();
+
+        // Reveal-on-scroll animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Contact form (no backend yet - just confirms receipt for now)
+        const form = document.querySelector('#contact form');
+        if (form) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Thanks! Your message has been noted. Please call us at 082 378 9842 for immediate assistance.');
+                form.reset();
+            });
+        }
+    </script>
+
+</body>
+</html>
